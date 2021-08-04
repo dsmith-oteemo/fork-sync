@@ -8,7 +8,7 @@ const MyOctokit = Octokit.plugin(retry)
 const octokit = new MyOctokit({
   auth: token,
   request: {
-    retries: 4,
+    retries: 1,
     retryAfter: 60,
   },
 });
